@@ -11,8 +11,8 @@ fun main() {
     rock_paper_scissors("Rock","Scissors")
     rock_paper_scissors("Rock","Rock")
     listnames("Belyse","John","James","sandra","jean")
-    lengthNames(arrayOf("Anna","Intwaza"))
-    comparison(30,20)
+    println(lengthNames(arrayOf("Anna","Intwaza")))
+    println(comparison(30,20))
 }
 fun introduction(name:String,age:Int){
     println("My name is $name and I am $age years old")
