@@ -8,6 +8,8 @@ fun main() {
     human.eat(20)
     human.speak("AkiraChix")
     human.birthday()
+    rock_paper_scissors("Rock","Scissors")
+    rock_paper_scissors("Rock","Rock")
 }
 fun introduction(name:String,age:Int){
     println("My name is $name and I am $age years old")
@@ -23,9 +25,6 @@ fun machime(age:Int){
         println("cocacola")
     }
 }
-//fun name (names:ArrayList<String>):List<Int>{
-//
-//}
 
 fun multiply(num1:Int,num2:Int):Int{
     return num1*num2
@@ -60,5 +59,16 @@ fun rock_paper_scissors(player1:String,player2:String){
     else if(player1=="Rock" && player2=="Scissors"){
         println("Player1 wins")
     }
-    else if(player1==)
+    else if(player1=="Scissors" && player2=="Rock"){
+        println("Player2 wins")
+    }
+    else if (player1=="Scissors" && player2=="Paper"){
+        println("Player1 wins")
+    }
+    else if (player1=="Paper" && player2=="Scissors"){
+        println("players2 wins")
+    }
+    else{
+        println("it's draw")
+    }
 }
